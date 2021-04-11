@@ -1,0 +1,108 @@
+function sayHello(){
+  console.log("Hello")
+}
+sayHello();
+
+function sayGoodbye(name){
+  console.log("Goodbye" +name);
+}
+sayGoodbye("Ali");
+sayGoodbye("James");
+sayGoodbye("John");
+
+function sum(a,b){
+  return a+b;
+}
+
+console.log(sum(3,4));
+console.log(sum(7,3));
+console.log(sum(2,6));
+
+function calculateAreaVolume(length,width,height){
+  return[length * width, length * width * height];
+}
+
+console.log(calculateAreaVolume(2.3.5));
+console.log(calculateAreaVoluume(5,9,3));
+
+
+var scores = [80,70,60,90,88];
+console.log(scores[0]);
+console.log(scores[2]);
+
+console.log(scores.length);
+scores.push(70);
+console.log(scores);
+
+//remove an item in array
+scores.pop();
+console.log(scores);
+scores.pop();
+console.log(scores);
+
+//loop
+for(var i=0; i<scores.length; i++){
+  console.log("Item " +i+" is " +scores[i]);
+}
+
+var testnumber = prompt("Enter number");
+if(number % 2 == 0) {
+    console.log("even number");
+}
+else {
+    console.log("odd number");
+}
+
+var multiplynumber = prompt('Enter an integer:');
+for(let i = 1; i <= 12; i++) {
+    var result = i * multiplynumber;
+    console.log(`${multiplynumber} * ${i} = ${result}`);
+}
+
+for (var i=1; i <= 100; i++)
+{
+    if (i % 15 == 0)
+        console.log("FizzBuzz");
+    else if (i % 3 == 0)
+        console.log("Fizz");
+    else if (i % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(i);
+}
+
+var n = 5;
+    let string = "";
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j <= i; j++) {
+        string += "#";
+      }
+      string += "<br>";
+    }
+    document.write(string);
+
+var number= 9;
+var chess = "";
+for (let i = 1; i <= number; i++) {
+  for (let j = 1; j <= number; j++) {
+    if ((i + j) % 2 == 0) {
+      chess += " ";
+    } else {
+      chess += "#";
+    }
+  }
+  chess += "\n";
+}
+console.log(chess);
+
+for (var counter = 0; counter <= 100; counter++) {
+    var fibonacci = false;
+    for (var i = 2; i <= counter; i++) {
+        if (counter%i===0 && i!==counter) {
+            notfibonacci = true;
+        }
+    }
+    if (notfibonacci === false) {
+                console.log(counter);
+    }
+}
